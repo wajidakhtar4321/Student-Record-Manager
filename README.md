@@ -52,8 +52,10 @@ Once logged in, you will see the **Navbar** with:
 - **JavaScript (Vanilla JS)** → Functionality (Login, Add, View, Edit, Delete Students)  
 - **Bootstrap** → Responsive Table Design
 
+
 ## Deployed on Netlify
 
 
 username: **welcome**, password: **1234**
+
 Check out the link: https://wajidakhtar4321.github.io/Student-Record-Manager/
