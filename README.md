@@ -54,4 +54,6 @@ Once logged in, you will see the **Navbar** with:
 
 ## Deployed on Netlify
 
-Check out the link: 
+
+username: **welcome**, password: **1234**
+Check out the link: https://wajidakhtar4321.github.io/Student-Record-Manager/
