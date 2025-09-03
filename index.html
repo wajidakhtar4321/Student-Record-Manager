@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="login-container" id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- App Wrapper -->
+    <div id="app" style="display:none;">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <h2>My Project</h2>
+            <div>
+                <button id="addBtn">Add</button>
+                <button id="recordBtn">Student Records</button>
+            </div>
+        </nav>
+
+        <div class="main-container">
+            <!-- Form Section -->
+            <div class="form-container" id="formContainer">
+                <form id="regForm">
+                    <input type="hidden" id="studentIndex">
+                    <h4>
+                        <u>Student Registration Form</u>
+                    </h4>
+                    <!-- <br> -->
+                    <label for="name">Student Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="name">College Name:</label>
+                    <input type="text" id="college" name="name" required>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+
+                    <label for="mobile">Mobile No:</label>
+                    <input type="text" id="mobile" name="mobile" required>
+
+                    <label for="course">Course Name:</label>
+                    <select id="course" name="course" required>
+                        <option value="" disabled selected>-- Select Course --</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="ai">AI</option>
+                        <option value="ml">Java</option>
+                        <option value="cse">Python</option>
+                        <option value="java">Machine Learning</option>
+                    </select>
+                    <br>
+                    <br>
+                    <div class="form-buttons">
+                        <button type="submit" id="btn2">Submit</button>
+                        <button type="button" id="backBtn">Back</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Student Records Section -->
+            <div class="student-section" id="studentSection">
+                <h3>Student Records (<span id="studentCount">0</span>)</h3>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>College-Name</th>
+                            <th>Age</th>
+                            <th>Mobile</th>
+                            <th>Course</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- View Student Section -->
+            <div class="view-container" id="viewContainer">
+                <h3>Student Details</h3>
+                <div id="viewDetails"></div>
+                <button id="closeViewBtn">Back</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
